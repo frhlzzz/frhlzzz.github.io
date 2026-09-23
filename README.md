@@ -1,9 +1,9 @@
-# kipu
-Data Knots
+# frhlzzz
+Ki_PU - Data Knots
 
 My personal portfolio website, built with HTML/CSS/JS and hosted on GitHub Pages.
 
-🔗 **Live site:** https://frhlzzz.github.io/kipu/
+🔗 **Live site:** https://frhlzzz.github.io
 
 ## Pages
 - `index.html` – Home
