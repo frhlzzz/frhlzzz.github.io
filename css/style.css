@@ -5,9 +5,15 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   color: #111;
   line-height: 1.6;
+}
+
+/* Wrapper that applies the 20px padding to everything except
+   the hero image and the footer border line */
+.page-wrap {
+  padding: 0 20px;
 }
 
 /* ---- Header ---- */
@@ -15,14 +21,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
-  border-bottom: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
-  font-size: 2.2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 nav ul {
@@ -35,9 +41,10 @@ nav ul li {
 }
 
 nav a {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
   text-decoration: none;
   color: #111;
-  font-weight: 600;
   font-size: 0.95rem;
 }
 
@@ -45,7 +52,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ---- Hero image ---- */
+/* ---- Hero image (full width, no padding) ---- */
 .hero img {
   width: 100%;
   max-height: 500px;
@@ -56,21 +63,23 @@ nav a:hover {
 /* ---- Bio ---- */
 .bio {
   max-width: 400px;
-  padding: 60px 40px 20px;
+  padding-top: 60px;
 }
 
 .bio p {
-  font-weight: 600;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 0.95rem;
 }
 
 /* ---- Projects ---- */
 .projects {
-  padding: 60px 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .projects h2 {
-  font-size: 2.5rem;
+  font-family: 'Michroma', sans-serif;
+  font-size: 2.2rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -90,16 +99,25 @@ nav a:hover {
 
 /* ---- Footer ---- */
 footer {
-  padding: 30px 40px;
+  margin-top: 20px;
+}
+
+.footer-line {
   border-top: 1px solid #eee;
-  font-weight: 600;
-  font-size: 0.85rem;
+  width: 100%;
+}
+
+.footer-content {
+  padding: 20px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.8rem;
 }
 
 /* ---- Responsive ---- */
 @media (max-width: 700px) {
   header {
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
   }
 
